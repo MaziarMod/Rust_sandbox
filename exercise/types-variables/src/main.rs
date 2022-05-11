@@ -5,6 +5,19 @@ use std::mem;
 
 fn main() {
 
+    //Variables hold primitive data or reference to data
+    //Varibles are immutable by default
+    //Rust is a block-scope language
+
+    //Primitive Data Types
+    // Integers: u8, u16, u32, u64, u128, i8, i16, i32, i64, i128
+    // Floats: f32, f64
+    // Booleans: bool
+    // Characters: char
+    // Tuples
+    // Arrays
+
+
     println!("===========>");
 
     let age: u8 = 87; //unsigned, 8 bits, 0-255
@@ -43,5 +56,17 @@ fn main() {
 
    let is_empty: bool = false;
    println!(" {}, and it size is {} byte", is_empty, mem::size_of_val(&is_empty));
+
+   //Assign multiple variables
+   let (project_num, project_due) = ("Game Engine", "tomorrow");
+   println!("{} project should be finished until {}", project_num, project_due);
+
+   //Find Max size
+   println!("Max i32: {}", std::i32::MAX);
+   println!("Max i64: {}", std::i64::MAX);
+   
+   // print emoji
+   let face = '\u{1F600}';
+   println!("{}", face);
 
 }
