@@ -39,7 +39,7 @@ fn main() {
     println!("Sting with capacity = {}", str1);
 
     //Assertion testing
-    assert_eq!(2, str1.len()); // will be failed because str1.len() = 3
+    assert_eq!(3, str1.len()); // nothing happens because str1.len() = 3
 
     
 }
