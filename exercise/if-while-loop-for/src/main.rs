@@ -35,4 +35,13 @@ fn main() {
     for (position, num4) in (100..110).enumerate() {
         println!("(for): Position {} --> Value {}", position, num4);
     }
+
+    // infinit loop
+    let mut counter = 0;
+    loop {
+        counter += 1;
+        println!("From infinit loop: {}", counter);
+
+        if counter == 8 {break};
+    }
 }
