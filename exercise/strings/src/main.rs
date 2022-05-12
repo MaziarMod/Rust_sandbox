@@ -1,6 +1,7 @@
 fn main() {
     // Primitive str = Immutable, fixed-length somewhere in memory. you are not able to use push or push_str
     let my_str = "Hello";
+    println!("fixed-length string: {}", my_str);
 
     //String = Growable, heap-allocated data structure - use when you need to modify or own string data
     let mut my_growable_str = String::from("Hello!");
