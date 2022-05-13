@@ -19,7 +19,7 @@ fn get_point() {
 struct Color(u8, u8, u8);
 
 fn get_color() {
-    let mut color1 = Color(100, 100, 0);
+    let color1 = Color(100, 100, 0);
     println!("Color1: ({}, {}, {})", color1.0, color1.1, color1.2);
 }
 
